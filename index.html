@@ -1,1 +1,198 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para iconos de FontAwesome -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>Mi Portfolio</h1>
+            <nav>
+                <a href="#about">Sobre mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy Aleeza, una apasionada desarrolladora web. Mi enfoque está en el desarrollo front-end, creando experiencias atractivas y funcionales. Siempre en busca de mejorar mis habilidades y aprender nuevas tecnologías.</p>
+        </div>
+    </section>
+
+    <!-- Sección "Proyectos" -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="proyecto1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Un sitio web interactivo usando HTML, CSS y JavaScript.</p>
+                </div>
+              
+                <div class="project">
+                    <img src="proyecto2.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Desarrollé una plataforma de comercio electrónico con funcionalidades avanzadas.</p>
+                </div>
+                <div class="project">
+                    <img src="proyecto3.jpg" alt="Proyecto 3">
+                    <h3>Proyecto 3</h3>
+                    <p>Un sitio web responsive con un diseño limpio y atractivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Habilidades" -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skill-bar">
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <p>JavaScript</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Testimonios" -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <blockquote>"Aleeza es una profesional comprometida, con una gran capacidad para resolver problemas y crear soluciones innovadoras."</blockquote>
+                <p>- Cliente Satisfecho</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Email: aleezas947@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aleeza">Mi LinkedIn</a></p>
+        </div>
+    </section>
+
+    <!-- Sección "Logros" -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2>Mis Logros</h2>
+            <div class="achievements">
+                <div class="achievement">
+                    <i class="fas fa-certificate"></i>
+                    <p>Certificación en Desarrollo Web</p>
+                </div>
+                <div class="achievement">
+                    <i class="fas fa-trophy"></i>
+                    <p>Primer lugar en Hackathon 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Botón de Contacto -->
+<a href="javascript:void(0);" class="contact-btn" id="openFormBtn">Contáctame</a>
+
+<!-- Modal con Formulario -->
+<div id="contactFormModal" class="contact-form-modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeFormBtn">&times;</span>
+        <h2>Contáctame</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/aleeza" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aleeza" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Aleeza - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Efecto de scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animación de carga al hacer scroll
+        const sections = document.querySelectorAll('.section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.5 });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+        // Obtener elementos
+const openFormBtn = document.getElementById('openFormBtn');
+const closeFormBtn = document.getElementById('closeFormBtn');
+const modal = document.getElementById('contactFormModal');
+
+// Mostrar el modal cuando se hace clic en el botón de contacto
+openFormBtn.onclick = function () {
+    modal.style.display = 'flex';
+}
+
+// Cerrar el modal cuando se hace clic en el botón de cerrar
+closeFormBtn.onclick = function () {
+    modal.style.display = 'none';
+}
+
+// Cerrar el modal si se hace clic fuera de la caja del formulario
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
+
+    </script>
+</body>
+</html>
