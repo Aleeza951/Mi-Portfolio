@@ -1,0 +1,45 @@
+/* Fondo claro */
+body {
+    background: linear-gradient(135deg, #f3f3f3, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Contenedor */
+.container {
+    text-align: center;
+}
+
+/* Nombre */
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+/* Botón */
+.btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none; /* Eliminar subrayado en el enlace */
+}
+
+/* Efecto Hover */
+.btn:hover {
+    background: #0056b3;
+}
