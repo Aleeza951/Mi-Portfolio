@@ -1,0 +1,76 @@
+/* contact.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0f7; /* Rosa claro de fondo */
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    margin: 2em 0;
+  }
+  
+  header h1 {
+    color: #d81b60; /* Rosa oscuro */
+  }
+  
+  header p {
+    color: #ab47bc; /* Rosa más suave */
+  }
+  
+  main {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 10px;
+    color: #d81b60; /* Rosa oscuro */
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e91e63; /* Rosa fuerte */
+    border-radius: 5px;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #ab47bc; /* Rosa suave al enfocarse */
+    outline: none;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #d81b60; /* Rosa oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #ab47bc; /* Rosa suave al pasar el mouse */
+  }
+  
+  footer {
+    background-color: #d81b60; /* Rosa oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  

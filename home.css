@@ -1,45 +1,122 @@
-/* Fondo claro */
+/* Body Styles */
 body {
-    background: linear-gradient(135deg, #f3f3f3, #ffffff);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    text-transform: uppercase;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Contenedor */
-.container {
-    text-align: center;
-}
-
-/* Nombre */
-h1 {
-    font-size: 5em;
-    font-weight: bold;
-    margin: 0;
-    letter-spacing: 5px;
-}
-
-/* Botón */
-.btn {
-    margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    font-weight: bold;
+/* Header Styles */
+.header {
+    background-color: #005f73; /* Dark blue */
     color: white;
-    background: #007bff;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* FAQ Content Styles */
+.main-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-content h2 {
+    text-align: center;
+    color: #005f73; /* Dark blue */
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+/* FAQ List */
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+.skills-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.skills-list li::before {
+    content: "✔️"; /* Agrega checkmarks automáticamente */
+    margin-right: 8px;
+    color: #005f73; /* Azul oscuro */
+}
+
+
+.faq-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #e0f0f3; /* Light blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #005f73; /* Dark blue */
+}
+
+.faq-answer {
+    font-size: 1rem;
+    margin: 0;
+    color: #555;
+    display: none; /* Initially hidden */
+}
+
+.faq-answer.active {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Go Back Button */
+.go-back-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background-color: #00aaff; /* Medium blue */
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
-    text-decoration: none; /* Eliminar subrayado en el enlace */
+    transition: background-color 0.3s ease;
 }
 
-/* Efecto Hover */
-.btn:hover {
-    background: #0056b3;
+.back-btn:hover {
+    background-color: #0088cc; /* Darker blue */
 }
+
+/* Footer Styles */
+.footer {
+    background-color: #005f73; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
+}
+
