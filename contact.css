@@ -1,76 +1,149 @@
-/* contact.css */
+/* Aseguramos que el html y body ocupen el 100% de la altura */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo general para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f0f7; /* Rosa claro de fondo */
-    color: #333;
-  }
-  
-  header {
-    text-align: center;
-    margin: 2em 0;
-  }
-  
-  header h1 {
-    color: #d81b60; /* Rosa oscuro */
-  }
-  
-  header p {
-    color: #ab47bc; /* Rosa más suave */
-  }
-  
-  main {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form label {
-    margin-bottom: 10px;
-    color: #d81b60; /* Rosa oscuro */
-  }
-  
-  form input, form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #e91e63; /* Rosa fuerte */
-    border-radius: 5px;
-  }
-  
-  form input:focus, form textarea:focus {
-    border-color: #ab47bc; /* Rosa suave al enfocarse */
-    outline: none;
-  }
-  
-  form button {
-    padding: 10px;
-    background-color: #d81b60; /* Rosa oscuro */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  form button:hover {
-    background-color: #ab47bc; /* Rosa suave al pasar el mouse */
-  }
-  
-  footer {
-    background-color: #d81b60; /* Rosa oscuro */
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  footer p {
-    font-size: 1rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #333;
+  flex: 1; /* Esto asegura que el contenido ocupe todo el espacio disponible */
+}
+
+/* Estilos del header */
+header {
+  text-align: center;
+  margin: 0;
+  background-color: #a8664b;
+  padding: 40px 20px;
+  border-radius: 0 0 10px 10px;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+}
+
+header p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Estilos para el contenido principal */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 30px;
+  flex: 1;
+}
+
+/* Contenedor para la información de contacto */
+.contact-info {
+  width: 45%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  color: #a8664b;
+}
+
+.contact-info a {
+  color: #a8664b;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del formulario */
+.contact-form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  color: #a8664b;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #a8664b;
+  border-radius: 5px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #a8664b;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #a8664b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #8a5238;
+}
+
+/* Aseguramos que los botones en el contenedor go-back-container estén espaciados */
+.go-back-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Estilo para el botón */
+.back-btn {
+  padding: 10px 20px;
+  background-color: #a8664b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background-color: #8a5238;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #a8664b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
