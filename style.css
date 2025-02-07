@@ -13,7 +13,7 @@ body {
     background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff7eb3);
     background-size: 300% 300%;
     animation: backgroundMove 8s infinite alternate;
-    background-image: url('butterfly.jpg'); /* Nombre de tu imagen */
+    background-image: url('brown.jpg'); /* Nombre de tu imagen */
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
