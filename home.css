@@ -1,10 +1,22 @@
 /* Body Styles */
+:root {
+    --primary-color: #a8664b;
+    --secondary-color: #ff6f61;
+    --tertiary-color: #005f73;
+    --background-color: #f0f4f8;
+    --highlight-color: #4CAF50;
+    --text-color: #333;
+  }
+
+  
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f4f8; /* Light background */
     color: #333;
     line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Header Styles */
@@ -13,23 +25,25 @@ body {
     color: white;
     text-align: center;
     padding: 2em;
+    background-color: var(--primary-color);
     margin-bottom: 20px;
+}
+
+.title-container {
+    text-align: center;
 }
 
 h1 {
     font-family: 'Helvetica', sans-serif;
     font-size: 4rem;
-    color: #fff; /* Color de texto blanco */
-    text-align: center;
-    background: linear-gradient(45deg, #ff6f61, #ff9a8b); /* Degradado en colores cálidos */
-    -webkit-background-clip: text; /* Aplica el fondo al texto */
-    color: transparent; /* Hace que el texto sea transparente para mostrar el fondo */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    margin-top: 10px;
-    padding: 10px;
-  }
+    background: linear-gradient(45deg, #ff6f61, #ff9a8b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
 
-  
   
 /* FAQ Content Styles */
 .main-content {
@@ -80,12 +94,15 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
+    border: 1px solid var(--tertiary-color);
 
-.faq-item:hover {
-    background-color: #e0f0f3; /* Light blue on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.faq-item:hover {
+    background-color: #e0f0f3;
+    transform: scale(1.02); /* Agranda ligeramente el item al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
 
 .faq-question {
     font-size: 1.3rem;
@@ -132,13 +149,11 @@ h1 {
     background-color: #8a5238;
 }
 
-
 /* Footer Styles */
 .footer {
-    background-color: #a8664b;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
-
