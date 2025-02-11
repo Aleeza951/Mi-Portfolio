@@ -105,3 +105,61 @@ h1 {
     font-weight: bold;
     margin-top: 10px;
 }
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        background-size: 200% 200%;
+    }
+
+    h1 {
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    #clock {
+        font-size: 16px;
+    }
+}
+
+/* Para tabletas y pantallas medianas */
+@media (max-width: 768px) {
+    body {
+        background-size: 300% 300%;
+    }
+
+    h1 {
+        font-size: 4em;
+        letter-spacing: 4px;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        font-size: 1.1em;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    #clock {
+        font-size: 18px;
+    }
+}
+
