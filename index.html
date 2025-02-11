@@ -8,18 +8,42 @@
     
 </head>
 <body>
-
     <div class="container">
-        <h1>Aleeza Sajid</h1>
-        <a href="home.html" target="_blank"> </a>
-        <button class="btn">Ver Más</button>
+        <div class="extra-info">
+            <section class="hero">
+                <h1>Welcome to Aleeza's World</h1>
+                <p>Discover more about me and my work.</p>
+                <button class="btn">Ver Más</button>
+              </section>
+              <button class="btn change-color">Cambiar Color</button>
+              <button id="dark-mode">Modo Oscuro</button>
+        </div>
+      
+        <div id="clock"></div>
     </div>
+      
 
     <script>
 
 document.querySelector(".btn").addEventListener("click", function() {
     window.location.href = "home.html";
 });
+
+document.querySelector(".change-color").addEventListener("click", function() {
+    document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+});
+
+document.getElementById("dark-mode").addEventListener("click", function() {
+    document.body.classList.toggle("dark");
+});
+
+function updateClock() {
+    document.getElementById("clock").innerText = new Date().toLocaleTimeString();
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+
     </script>
 </body>
 </html>

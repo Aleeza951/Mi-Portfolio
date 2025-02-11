@@ -1,26 +1,15 @@
-/* Estilos Generales */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff7eb3);
-    background-size: 300% 300%;
-    animation: backgroundMove 8s infinite alternate;
-    background-image: url('brown.jpg'); /* Nombre de tu imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    }
+    background-color: #a8664b;
+    background-size: 400% 400%;
+    animation: gradientMove 5s ease infinite;
+}
 
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
-    
 /* Animación del Fondo */
 @keyframes backgroundMove {
     0% { background-position: left top; }
@@ -61,14 +50,58 @@ h1 {
     font-size: 1.2em;
     font-weight: bold;
     color: white;
-    background: #a8664b;
+    background: #7e4a36; /* Color de fondo personalizado */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s; /* Transición para cambio de fondo */
 }
 
-/* Efecto Hover */
+/* Efecto de hover */
 .btn:hover {
-    background: #8b5038;;
+    background: #8f5742; /* Color de fondo cambia ligeramente al pasar el ratón */
+    transform: scale(1.1); /* El tamaño del botón crece ligeramente */
+}
+
+/* Efecto de sombra cuando se presiona */
+.btn:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+
+
+.container:hover .extra-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hero {
+    background-image: url('path/to/your-image.jpg'); /* Añadir una imagen de fondo */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  .hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+  }
+  .dark {
+    background-color: #0f0e0e;
+    color: white;
+}
+#clock {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
 }
