@@ -15,8 +15,7 @@
                 <p>Discover more about me and my work...</p>
                 <button class="btn">Ver Más</button>
               </section>
-              <button class="btn change-color">Cambiar Color</button>
-              <button id="dark-mode">Modo Oscuro</button>
+              <button class="btn change-color"></button>
         </div>
       
         <div id="clock"></div>
@@ -33,15 +32,6 @@ document.querySelector(".change-color").addEventListener("click", function() {
     document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 });
 
-document.getElementById("dark-mode").addEventListener("click", function() {
-    document.body.classList.toggle("dark");
-});
-
-function updateClock() {
-    document.getElementById("clock").innerText = new Date().toLocaleTimeString();
-}
-setInterval(updateClock, 1000);
-updateClock();
 
 
     </script>

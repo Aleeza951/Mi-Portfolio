@@ -88,23 +88,6 @@ h1 {
     flex-direction: column;
 }
 
-  .hero h1 {
-    font-size: 4em;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.5em;
-  }
-  .dark {
-    background-color: #0f0e0e;
-    color: white;
-}
-#clock {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-}
 /* Para pantallas pequeñas */
 @media (max-width: 600px) {
     body {

@@ -116,8 +116,11 @@ h1 {
     margin: 0;
     color: #555;
     display: none; /* Initially hidden */
+    font-style: italic;
+
 }
 
+  
 .faq-answer.active {
     display: block;
     margin-top: 10px;
