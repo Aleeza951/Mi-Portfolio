@@ -5,35 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleeza Sajid</title>
     <link rel="stylesheet" href="style.css"> 
-    
 </head>
 <body>
     <div class="container">
         <div class="extra-info">
             <section class="hero">
+                <div class="profile-container">
+                    <img src="IMG-.jpg" alt="Aleeza Sajid" class="profile-pic">
+                </div>
                 <h1>Welcome to Aleeza's World</h1>
                 <p>Discover more about me and my work...</p>
                 <button class="btn">Ver Más</button>
-              </section>
-              <button class="btn change-color"></button>
+            </section>
+            <button class="btn change-color">Cambiar Color</button>
         </div>
       
         <div id="clock"></div>
     </div>
-      
 
     <script>
+        document.querySelector(".btn").addEventListener("click", function() {
+            window.location.href = "home.html";
+        });
 
-document.querySelector(".btn").addEventListener("click", function() {
-    window.location.href = "home.html";
-});
-
-document.querySelector(".change-color").addEventListener("click", function() {
-    document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-});
-
-
-
+        document.querySelector(".change-color").addEventListener("click", function() {
+            document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        });
     </script>
 </body>
 </html>

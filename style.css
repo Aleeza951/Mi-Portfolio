@@ -18,6 +18,80 @@ body {
     100% { background-position: right bottom; }
 }
 
+
+/* Responsive: Ajusta la imagen en móviles */
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* Contenedor de la foto para sombra y efecto flotante */
+
+/* Contenedor de la foto para sombra y efecto flotante */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Tamaño más grande */
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff7eb3); /* Fondo degradado */
+    padding: 8px; /* Espacio entre la imagen y el borde */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Sombra profunda */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo de la foto de perfil */
+.profile-pic {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white; /* Borde más grueso */
+}
+
+/* Efecto hover en la foto */
+.profile-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Aumenta la sombra */
+}
+
+/* Responsive: Ajusta la imagen en móviles */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 250px;
+        height: 250px;
+    }
+    .profile-pic {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        width: 200px;
+        height: 200px;
+    }
+    .profile-pic {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+/* Responsive: Ajusta la imagen en móviles */
+@media (max-width: 600px) {
+    .profile-container {
+        width: 150px;
+        height: 150px;
+    }
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+}
+
 /* Contenedor */
 .container {
     text-align: center;
