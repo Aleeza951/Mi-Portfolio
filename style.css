@@ -122,20 +122,19 @@ h1 {
 /* Botón */
 .btn {
     margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 5px 10px;
     font-weight: bold;
     color: white;
-    background: #7e4a36; /* Color de fondo personalizado */
+    background: #000000; /* Color de fondo personalizado */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s; /* Transición para cambio de fondo */
 }
 
 /* Efecto de hover */
 .btn:hover {
-    background: #8f5742; /* Color de fondo cambia ligeramente al pasar el ratón */
+    background: #272625; /* Color de fondo cambia ligeramente al pasar el ratón */
     transform: scale(1.1); /* El tamaño del botón crece ligeramente */
 }
 
@@ -156,7 +155,7 @@ h1 {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     display: flex;
     justify-content: center;

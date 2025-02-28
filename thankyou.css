@@ -1,7 +1,7 @@
 /* Estilo general para la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    font-family: 'Roboto', sans-serif; /* Fuente más elegante */
+    background:#a8664b; /* Fondo suave con gradiente moderno */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,44 +9,94 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    color: #333;
 }
 
 /* Contenedor principal */
 .container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
+    background-color: #d6b180;
+    padding: 60px;
+    border-radius: 25px; /* Bordes más redondeados */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15); /* Sombra más suave y difusa */
+    width: 85%;
+    max-width: 650px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Efecto hover para el contenedor */
+.container:hover {
+    transform: translateY(-10px); /* Elevación suave */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Título */
 h1 {
-    font-size: 3em;
-    color: #4CAF50;
+    font-size: 3.5em;
+    color: #2d3748;
     margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 700; /* Peso del texto más fuerte */
+    text-transform: uppercase;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Animación de brillo en el título */
+@keyframes textGlow {
+    0% { text-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+    100% { text-shadow: 0 0 30px rgba(0, 0, 0, 1); }
 }
 
 /* Mensaje */
 p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #555;
     margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 /* Botón para regresar */
 a {
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #a8664b; /* Color verde fresco */
     color: white;
-    padding: 15px 25px;
-    font-size: 1.1em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    padding: 18px 32px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 /* Efecto hover para el botón */
 a:hover {
-    background-color: #45a049;
+    background-color: #b96a4a;
+    transform: scale(1.05); /* Botón crece ligeramente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto de foco en los enlaces */
+a:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la página en pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em; /* Título más pequeño en pantallas pequeñas */
+    }
+    .container {
+        padding: 40px; /* Menos padding en pantallas pequeñas */
+        width: 90%;
+    }
+    a {
+        padding: 14px 26px; /* Botón más pequeño */
+    }
 }
