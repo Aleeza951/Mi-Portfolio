@@ -160,53 +160,61 @@ footer p {
   margin: 0;
 }
 
-/* Media Query para tablets (pantallas menores a 1024px) */
 @media screen and (max-width: 1024px) {
   main {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Cambia el diseño a columna */
+    align-items: center; /* Centra los elementos */
   }
 
   .contact-info, .contact-form {
-    width: 90%;
-    left: 0;
-    right: 0;
+    width: 90%; /* Ajusta el ancho de los formularios */
+    left: 0; /* Elimina el desplazamiento */
+    right: 0; /* Elimina el desplazamiento */
+    position: static; /* Restablece la posición */
+  }
+  .contact-form button {
+    position: relative;
+    left: 17rem;
+    width: 20%;
   }
 }
 
-/* Media Query para móviles (pantallas menores a 768px) */
 @media screen and (max-width: 768px) {
   header {
-    height: auto;
-    padding: 20px;
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 20px; /* Reduce el espacio de relleno */
   }
 
   main {
-    flex-direction: column;
-    padding: 10px;
+    flex-direction: column; /* Cambia a columna */
+    padding: 10px; /* Reduce el relleno */
   }
 
   .contact-info, .contact-form {
-    width: 100%;
-    padding: 10px;
+    width: 100%; /* Asegura que los formularios ocupen el 100% del ancho */
+    padding: 10px; /* Reduce el relleno */
   }
 
   .contact-form input, .contact-form textarea {
-    font-size: 14px;
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+  }
+  .contact-form button {
+    position: relative;
+    left: 5rem;
+    width: 50%;
   }
 
   .go-back-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Apila los botones */
+    align-items: center; /* Centra los botones */
   }
 
   .back-btn {
-    width: 30%;
-  
+    width: 50%; /* Ajusta el tamaño del botón */
   }
 
   footer {
-    padding: 10px;
-    font-size: 0.9rem;
+    padding: 10px; /* Reduce el relleno del pie de página */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
   }
 }
