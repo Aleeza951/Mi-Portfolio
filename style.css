@@ -25,7 +25,7 @@ body {
     width: 350px; /* Tamaño más grande */
     height: 350px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff7eb3); /* Fondo degradado */
+    background: linear-gradient(135deg, #cc4a80, #740618, #61072c); /* Fondo degradado */
     padding: 8px; /* Espacio entre la imagen y el borde */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Sombra profunda */
     transition: transform 0.3s, box-shadow 0.3s;
