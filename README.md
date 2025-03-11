@@ -1,36 +1,67 @@
-Aleeza Sajid - Personal Webpage
-📌 Overview
+# 🎨 Aleeza Sajid - Portfolio
 
-This is a personal webpage showcasing Aleeza Sajid, a web developer. It includes an animated profile section, interactive buttons, and a stylish design with smooth animations.
-🚀 Features
+Este es mi portafolio personal, donde muestro mi trabajo como Web Developer.
 
-    Profile Section: Displays a profile picture with hover effects.
-    Welcome Message: Large animated text with a glowing effect.
-    Navigation Button: A button redirects users to home.html.
-    Dynamic Background Changer: Click a button to change the background color randomly.
-    Smooth Animations: Includes fade-in effects, text glow, and hover scaling.
-    Responsive Design: Adjusts for different screen sizes using media queries.
+📌 Características
 
-🎨 Technologies Used
+Página de inicio con una presentación animada.
 
-    HTML: Structure of the webpage.
-    CSS: Styling, animations, and responsive design.
-    JavaScript: Handles button interactions and background color changes.
+Imagen de perfil con efectos de hover y sombra.
 
-🛠 How to Use
+Botón de cambio de color aleatorio de fondo.
 
-    Open index.html in a browser.
-    Click the "Ver Más" button to navigate to home.html.
-    Click the color-changing button to modify the background randomly.
+Diseño responsivo adaptable a dispositivos móviles.
 
-📱 Responsive Design
+Animaciones sutiles para una experiencia más atractiva.
 
-    Adapts to different screen sizes.
-    Profile image scales for mobile screens.
+🖼️ Capturas
 
-📂 File Structure
-/project-folder  
-│── index.html  
-│── style.css  
-│── IMG-.jpg (Profile Image)  
-│── home.html (Linked Page)  
+Pantalla principal
+
+
+
+Efecto Hover en Imagen de Perfil
+
+
+
+🚀 Tecnologías utilizadas
+
+HTML5
+
+CSS3 (Animaciones y Media Queries)
+
+JavaScript (Eventos y Dinámica de la página)
+
+📂 Estructura del Proyecto
+/
+|-- index.html   # Archivo principal
+|-- style.css    # Estilos de la página
+|-- script.js    # Funciones interactivas
+|-- /assets/img  # Imágenes del proyecto
+
+⚙️ Instalación y Uso
+
+Clonar el repositorio
+git clone https://github.com/Aleeza951/portfolio.git
+
+ Funcionalidades
+
+Botón "Ver Más": Redirige a la página de inicio.
+
+Cambio de color de fondo: Un botón cambia el color aleatoriamente.
+
+Animaciones y transiciones: Efectos visuales en texto e imágenes.
+
+🖥️ Responsive Design
+
+El portafolio es totalmente responsivo y se adapta a:
+
+✅ Móviles 
+✅ Tablets 
+✅ Escritorio
+
+🔗 Enlaces
+
+Portafolio en vivo: Mi Portafolio
+
+GitHub: Aleeza Sajid
