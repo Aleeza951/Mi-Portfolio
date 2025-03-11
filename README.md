@@ -49,6 +49,11 @@ document.querySelector(".change-color").addEventListener("click", function() {
 
 Bienvenido a la página de inicio de Aleeza Sajid, una desarrolladora web con un portafolio que destaca proyectos, habilidades y experiencia en el desarrollo web.
 
+## 🖼️ Capturas
+
+![Inicio left](Inicio.png)
+![Inicio right](inicio.png)
+
 ## 🌟 Características
 
 - **Sobre mí**: Una breve descripción de Aleeza Sajid, su trayectoria, y su pasión por el desarrollo web.
@@ -70,6 +75,12 @@ Bienvenido a la página de inicio de Aleeza Sajid, una desarrolladora web con un
 # Página de Contacto
 
 Esta es una página de "Contacto" diseñada con HTML y CSS. Permite a los usuarios ponerse en contacto proporcionando su nombre, correo electrónico y mensaje. La página también incluye enlaces a información de contacto como correo electrónico, LinkedIn, GitHub y número de teléfono.
+
+## 🖼️ Capturas
+
+![Contacto](contacto.png)
+
+
 ## Características
 
 - Información de Contacto: Muestra correo electrónico, LinkedIn, GitHub y número de teléfono.
@@ -88,7 +99,13 @@ Esta es una página de "Contacto" diseñada con HTML y CSS. Permite a los usuari
 # Página de Agradecimiento
 
 Esta es una página de agradecimiento que se muestra después de que un usuario envía un mensaje a través del formulario de contacto. La página informa al usuario que su mensaje ha sido recibido y que se responderá lo antes posible. Además, ofrece un enlace para regresar a la página principal.
-Características
+
+## 🖼️ Capturas
+
+![thankyou](thankyou.png)
+
+
+## Características
 
 - Mensaje de Agradecimiento: Un mensaje claro agradeciendo al usuario por su mensaje.
 - Enlace para Regresar: Un botón que permite al usuario regresar a la página principal.
