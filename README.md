@@ -1,27 +1,20 @@
 # 🎨 Aleeza Sajid - Portfolio
 
 Este es mi portafolio personal, donde muestro mi trabajo como Web Developer.
-
-## 📌 Características
-
-Página de inicio con una presentación animada.
-
-Imagen de perfil con efectos de hover y sombra.
-
-Botón de cambio de color aleatorio de fondo.
-
-Diseño responsivo adaptable a dispositivos móviles.
-
-Animaciones sutiles para una experiencia más atractiva.
-
 ## 🖼️ Capturas
 
-Pantalla principal
-
-
+![Portfolio](portfolio.png)
 
 Efecto Hover en Imagen de Perfil
 
+
+## 📌 Características
+
+- Página de inicio con una presentación animada.
+- Imagen de perfil con efectos de hover y sombra.
+- Botón de cambio de color aleatorio de fondo.
+- Diseño responsivo adaptable a dispositivos móviles.
+- Animaciones sutiles para una experiencia más atractiva.
 
 
 ## 🚀 Tecnologías utilizadas
@@ -42,12 +35,10 @@ Efecto Hover en Imagen de Perfil
 Clonar el repositorio
 git clone https://github.com/Aleeza951/portfolio.git
 
- Funcionalidades
+ ## Funcionalidades
 
 - Botón "Ver Más": Redirige a la página de inicio.
-
 - Cambio de color de fondo: Un botón cambia el color aleatoriamente.
-
 - Animaciones y transiciones: Efectos visuales en texto e imágenes.
 
 ## 🖥️ Responsive Design
