@@ -1,6 +1,7 @@
 # 🎨 Aleeza Sajid - Portfolio
 
 Este es mi portafolio personal, donde muestro mi trabajo como Web Developer.
+
 ## 🖼️ Capturas
 
 ![Portfolio](portfolio.png)
@@ -8,13 +9,28 @@ Este es mi portafolio personal, donde muestro mi trabajo como Web Developer.
 Efecto Hover en Imagen de Perfil
 
 
+
 ## 📌 Características
 
-- Página de inicio con una presentación animada.
-- Imagen de perfil con efectos de hover y sombra.
-- Botón de cambio de color aleatorio de fondo.
-- Diseño responsivo adaptable a dispositivos móviles.
-- Animaciones sutiles para una experiencia más atractiva.
+- **Botón "Ver Más"**: Redirige al usuario a la página `home.html` para conocer más sobre Aleeza y su trabajo.
+- **Botón de Cambio de Color**: Permite cambiar aleatoriamente el color de fondo de la página al hacer clic.
+- **Imagen de Perfil**: Una imagen de perfil con un estilo atractivo.
+- **Diseño Responsivo**: Adaptable a dispositivos móviles, tabletas y escritorios.
+- **Animaciones Sutiles**: Efectos visuales suaves para una experiencia de usuario más atractiva.
+
+## 🖱️ Botón de Cambio de Color
+
+El botón de cambio de color aleatorio permite una interacción divertida con la   página, cambiando el color de fondo al azar cada vez que se hace clic.
+Código JavaScript para Cambio de Color:
+
+### Código JavaScript para Cambio de Color:
+
+document.querySelector(".change-color").addEventListener("click", function() {
+    document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+});
+
+- Este código genera un color aleatorio en formato hexadecimal y lo aplica al fondo de la página.
+
 
 
 ## 🚀 Tecnologías utilizadas
@@ -25,10 +41,10 @@ Efecto Hover en Imagen de Perfil
 
 ## 📂 Estructura del Proyecto
 /
-|-- index.html   # Archivo principal
-|-- style.css    # Estilos de la página
-|-- script.js    # Funciones interactivas
-|-- /assets/img  # Imágenes del proyecto
+- |-- index.html   # Archivo principal
+- |-- style.css    # Estilos de la página
+- |-- script.js    # Funciones interactivas
+- |-- /assets/img  # Imágenes del proyecto
 
 ## ⚙️ Instalación y Uso
 
