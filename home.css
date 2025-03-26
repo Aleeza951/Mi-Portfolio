@@ -1,35 +1,32 @@
 /* Body Styles */
 :root {
     --primary-color: #a8664b;
-    --secondary-color: #ff6f61;
-    --tertiary-color: #005f73;
-    --background-color: #f0f4f8;
-    --highlight-color: #4CAF50;
-    --text-color: #333;
-  }
+    --secondary-color: #f1b6a5;
+    --tertiary-color: #506c7f;
+    --background-color: #f7f7f7;
+    --highlight-color: #f1b6a5;
+    --text-color: #4a3c31;
+}
 
-  
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8; /* Light background */
-    color: #333;
-    line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
+    line-height: 1.6;
 }
 
 /* Header Styles */
 .header {
-    background-color: #a8664b;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 2em;
-    background-color: var(--primary-color);
     margin-bottom: 20px;
+    border: 2px solid #f1b6a5;
+    box-shadow: 0 0 10px rgba(241, 182, 165, 0.8), 0 0 20px rgba(241, 182, 165, 0.8);
 }
 
-  
 .title-container {
     text-align: center;
 }
@@ -37,11 +34,11 @@ body {
 h1 {
     font-family: 'Helvetica', sans-serif;
     font-size: 4rem;
-    background: linear-gradient(45deg, #ff6f61, #ff9a8b);
+    background: linear-gradient(45deg, #f1b6a5, #506c7f);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px rgba(241, 182, 165, 0.8), 0 0 10px rgba(241, 182, 165, 0.8), 0 0 15px rgba(241, 182, 165, 0.8);
     display: inline-block;
     animation: zoomIn 1s ease-out;
 }
@@ -57,17 +54,18 @@ h1 {
     }
 }
 
-  
 /* FAQ Content Styles */
 .main-content {
     max-width: 800px;
     margin: auto;
     padding: 20px;
+    border: 2px solid #f1b6a5;
+    box-shadow: 0 0 10px rgba(241, 182, 165, 0.8), 0 0 20px rgba(241, 182, 165, 0.8);
 }
 
 .main-content h2 {
     text-align: center;
-    color: #005f73; /* Dark blue */
+    color: #506c7f;
     font-size: 2rem;
     margin-bottom: 1.5em;
 }
@@ -77,27 +75,15 @@ h1 {
     list-style: none;
     padding: 0;
 }
-.skills-list {
-    list-style: none;
-    padding: 0;
-    font-size: 1.2rem;
-    color: #333;
-}
 
-.skills-list li::before {
-    content: "✔️"; /* Agrega checkmarks automáticamente */
-    margin-right: 8px;
-    color: #005f73; /* Azul oscuro */
-}
-/* para writing style*/
+/* Writing style */
 .highlight {
     font-weight: bold;
     font-size: 1.2rem;
-    color: #4CAF50;
+    color: #f1b6a5;
     font-style: italic;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    text-shadow: 0 0 10px #f1b6a5, 0 0 20px #f1b6a5;
 }
-
 
 .faq-item {
     background-color: white;
@@ -107,46 +93,81 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--tertiary-color);
-
+    border: 1px solid #f1b6a5;
 }
+
 .faq-item:hover {
     background-color: #e0f0f3;
-    transform: scale(1.02); /* Agranda ligeramente el item al pasar el mouse */
+    transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  }
+    border: 2px solid #f1b6a5;
+}
 
 .faq-question {
     font-size: 1.3rem;
     margin-bottom: 5px;
     color: #a8664b;
     font-weight: bold;
+    text-shadow: 0 0 5px rgba(241, 182, 165, 0.8), 0 0 10px rgba(241, 182, 165, 0.8);
 }
 
 .faq-answer {
     font-size: 1rem;
     margin: 0;
     color: #555;
-    display: none; /* Initially hidden */
+    display: none;
     font-style: italic;
-
 }
 
-  
 .faq-answer.active {
     display: block;
     margin-top: 10px;
 }
+
+/* About Section Layout */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 2;
+}
+.about-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Para centrar la imagen verticalmente también */
+}
+
+.photo-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.photo-img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Button Styles */
 .buttons-container {
     display: flex;
-    justify-content: center; /* Centra los botones */
+    justify-content: center;
     margin-top: 20px;
 }
+
 .go-back-container {
     display: flex;
-    justify-content: center; /* Centra los botones */
-    gap: 15px; /* Espacio entre botones */
+    justify-content: center;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -159,10 +180,12 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
+    box-shadow: 0 0 5px rgba(168, 102, 75, 0.8), 0 0 10px rgba(168, 102, 75, 0.8);
 }
 
 .back-btn:hover, .contact-btn:hover {
     background-color: #8a5238;
+    box-shadow: 0 0 20px rgba(168, 102, 75, 1), 0 0 30px rgba(168, 102, 75, 0.8);
 }
 
 /* Footer Styles */
@@ -172,26 +195,44 @@ h1 {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    border-top: 2px solid #f1b6a5;
+    box-shadow: 0 0 10px rgba(241, 182, 165, 0.8), 0 0 20px rgba(241, 182, 165, 0.8);
 }
 
-/* Media Query para pantallas pequeñas */
+/* Media Query for small screens */
 @media (max-width: 768px) {
-    /* Ajustes para el header */
     .header {
-      padding: 1.5em; /* Reduce el padding del header */
-      text-align: center; /* Centra el texto */
+        padding: 1.5em;
+        text-align: center;
     }
-  
-    /* Ajustes para el h1 */
+
     h1 {
         font-family: 'Helvetica', sans-serif;
         font-size: 3rem;
-        background: linear-gradient(45deg, #ff6f61, #ff9a8b);
+        background: linear-gradient(45deg, #f1b6a5, #506c7f);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        text-shadow: 0 0 5px rgba(241, 182, 165, 0.8), 0 0 10px rgba(241, 182, 165, 0.8);
         display: inline-block;
     }
-  }
-  
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-photo {
+        margin-top: 10px;
+    }
+
+    .photo-img {
+        width: 120px;
+        height: 120px;
+    }
+}

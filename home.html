@@ -19,12 +19,27 @@
     <h2></h2>
     <ul class="faq-list">
       <li class="faq-item">
-          <h3 class="faq-question">👩‍💻 Sobre mí</h3>
-          <p class="faq-answer">¡Hola! Soy Aleeza Sajid, una desarrolladora web. Me apasiona crear sitios web accesibles, funcionales y visualmente atractivos. Comencé mi viaje con HTML y CSS, y ahora estoy expandiendo mis habilidades con JavaScript y otras tecnologías. Siempre busco mejorar y aprender nuevas herramientas para ofrecer experiencias web excepcionales.
-
-En mi tiempo libre, me gusta experimentar con nuevas tecnologías y contribuir a proyectos de código abierto. ¡Estoy emocionada por colaborar y seguir creciendo como desarrolladora!....</p>
+        <!-- Título "Sobre mí" que, al hacer clic, mostrará la respuesta -->
+        <div class="faq-question" onclick="toggleAboutSection()">👩‍💻 Sobre mí</div>
+        <!-- Contenido oculto inicialmente -->
+        <div id="about-section" class="faq-answer hidden">
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                ¡Hola! Soy Aleeza Sajid, una desarrolladora web. Me apasiona crear sitios web accesibles, funcionales y visualmente atractivos.
+                Comencé mi viaje con HTML y CSS, y ahora estoy expandiendo mis habilidades con JavaScript y otras tecnologías. <br><br> 
+                En mi tiempo libre, me gusta experimentar con nuevas tecnologías y contribuir a proyectos de código abierto. 
+                ¡Estoy emocionada por colaborar y seguir creciendo como desarrolladora!
+              </p>
+            </div>
+            <div class="about-photo">
+              <img src="Snapchat(1).jpg" alt="Foto de Aleeza Sajid" class="photo-img">
+            </div>
+          </div>
+        </div>
       </li>
-  
+    </ul>
+    
       <li class="faq-item">
         <h3 class="faq-question">💡 Habilidades </h3>
         <p class="faq-answer">
@@ -145,7 +160,11 @@ En mi tiempo libre, me gusta experimentar con nuevas tecnologías y contribuir a
         answer.classList.toggle('active');
       });
     });
-
+ // Función para mostrar y ocultar la respuesta al hacer clic en el título
+ function toggleAboutSection() {
+      const aboutSection = document.getElementById('about-section');
+      aboutSection.classList.toggle('hidden'); // Alterna la visibilidad
+    }
   </script>
 </body>
 </html>
