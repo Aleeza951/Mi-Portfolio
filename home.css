@@ -30,31 +30,86 @@ body {
 .title-container {
     text-align: center;
 }
-
-h1 {
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 20px;
+    border: 2px solid #f1b6a5;
+    box-shadow: 0 0 10px rgba(241, 182, 165, 0.8), 0 0 20px rgba(241, 182, 165, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title-container {
+    text-align: center;
+  }
+  
+  h1 {
     font-family: 'Helvetica', sans-serif;
     font-size: 4rem;
-    background: linear-gradient(45deg, #a8664b, #3e505d); /* darker gradient */
+    background: linear-gradient(45deg, #a8664b, #3e505d);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 3px rgba(100, 60, 45, 0.7), 0 0 5px rgba(100, 60, 45, 0.7); /* lighter glow */
+    text-shadow: 0 0 3px rgba(100, 60, 45, 0.7), 0 0 5px rgba(100, 60, 45, 0.7);
     display: inline-block;
     animation: zoomIn 1s ease-out;
-}
-
-
-@keyframes zoomIn {
+    position: relative;
+    left:29rem;
+  }
+  
+  @keyframes zoomIn {
     0% {
-        transform: scale(0.8);
-        opacity: 0;
+      transform: scale(0.8);
+      opacity: 0;
     }
     100% {
-        transform: scale(1);
-        opacity: 1;
+      transform: scale(1);
+      opacity: 1;
     }
-}
-
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column; /* Makes the icons stack vertically */
+    gap: 15px;
+    align-items: center; /* Centers the icons horizontally */
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    animation: neonPulse 1.5s infinite alternate; /* Add the animation */
+  }
+  
+  /* Neon effect on hover */
+  .social-icons a:hover {
+    color: #fff; /* White color for the text when hovered */
+    text-shadow: 0 0 5px #c72a78, 0 0 10px #c72a78, 0 0 15px #c72a78, 0 0 20px #c72a78; /* Neon glow */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+  
+  /* Neon pulse animation */
+  @keyframes neonPulse {
+    0% {
+      text-shadow: 0 0 5px #c72a78, 0 0 10px #c72a78, 0 0 15px #c72a78, 0 0 20px #c72a78;
+      transform: scale(1); /* Normal size */
+    }
+    50% {
+      text-shadow: 0 0 10px #c72a78, 0 0 20px #c72a78, 0 0 30px #c72a78, 0 0 40px #c72a78; /* Bigger glow */
+      transform: scale(1.1); /* Slightly enlarged size */
+    }
+    100% {
+      text-shadow: 0 0 5px #c72a78, 0 0 10px #c72a78, 0 0 15px #c72a78, 0 0 20px #c72a78;
+      transform: scale(1); /* Back to normal size */
+    }
+  }
+  
+  
 /* FAQ Content Styles */
 .main-content {
     max-width: 800px;
